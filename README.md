@@ -6,7 +6,6 @@ These instructions were verified on VASSAL 3.2.15 and VASL 6.2.2
 
 ### Download and run the script
 1. Right-click on the link [vasl_setup.bat](https://raw.githubusercontent.com/ssmythe/vasl-setup/master/vasl_setup.bat), and chose "Save as..." the file to your Downloads folder
-  * **(IMPORTANT: Make sure to rename the file from "vasl_setup.bat.txt" to "vasl_setup.bat" in your Save As dialog)**
 2. Open Windows Explorer, and navigate to your Downloads folder
 3. Double-click "vasl_setup.bat"
 4. The script will finish in about a minute, depending on your Internet connection speed
