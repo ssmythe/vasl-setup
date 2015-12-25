@@ -92,7 +92,7 @@ echo Unzip "%ASLROOT%\VASL\VASLv%VASLVERSION%.zip" "%ASLROOT%\VASL" >> "%SCRIPTN
 if exist %ASLROOT%\VASL\VASLv%VASLVERSION%.zip del /F %ASLROOT%\VASL\VASLv%VASLVERSION%.zip 2>&1 1> nul
 echo Downloading VASL zip from vasl.info and expanding it
 PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%SCRIPTNAME%.ps1'" 2>&1 1> nul
-echo Cleaning up downloaded zip and expanded directory
+echo Cleaning up downloaded zip
 if exist %ASLROOT%\VASL\VASLv%VASLVERSION%.zip del /F /Q %ASLROOT%\VASL\VASLv%VASLVERSION%.zip 2>&1 1> nul
 echo Cleaning up PowerShell script to download VASL
 if exist "%SCRIPTNAME%.ps1" del /F "%SCRIPTNAME%.ps1"
@@ -157,11 +157,12 @@ echo } >> "%SCRIPTNAME%.ps1"
 echo Unzip "%ASLROOT%\VASL\master.zip" "%ASLROOT%\VASL" >> "%SCRIPTNAME%.ps1"
 
 if exist %ASLROOT%\VASL\master.zip del /F %ASLROOT%\VASL\master.zip 2>&1 1> nul
-if exist %ASLROOT%\VASL\scenarios-master rmdir /S /Q %ASLROOT%\VASL\scenarios-master 2>&1 1> nul
+if exist %ASLROOT%\VASL\vasl-boards-extensions-master rmdir /S /Q %ASLROOT%\VASL\vasl-boards-extensions-master 2>&1 1> nul
 if exist %ASLROOT%\VASL\boards rmdir /S /Q %ASLROOT%\VASL\boards 2>&1 1> nul
 if exist %ASLROOT%\VASL\extensions rmdir /S /Q %ASLROOT%\VASL\extensions 2>&1 1> nul
 if exist %ASLROOT%\VASL\extensions-6.0 rmdir /S /Q %ASLROOT%\VASL\extensions-6.0 2>&1 1> nul
 if exist %ASLROOT%\VASL\extensions-complete rmdir /S /Q %ASLROOT%\VASL\extensions-complete 2>&1 1> nul
+if exist %ASLROOT%\VASL\extensions-ssmythe rmdir /S /Q %ASLROOT%\VASL\extensions-ssmythe 2>&1 1> nul
 echo Downloading VASL boards and extensions zip from GitHit and expanding it
 echo Warning: this is a 273 MB download.  It's big!
 echo The download takes about a minute on a 60 Mbps connection...

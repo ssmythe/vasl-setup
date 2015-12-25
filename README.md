@@ -4,11 +4,52 @@ Scripts to create Patrick Ireland's standard VASL directory structures, and down
 ## On Windows
 These instructions were verified on VASSAL 3.2.15 and VASL 6.2.2
 
-### Download and run the script
+### Download the script
 1. Right-click on the link [vasl_setup.bat](https://raw.githubusercontent.com/ssmythe/vasl-setup/master/vasl_setup.bat), and chose "Save as..." the file to your Downloads folder
-2. Open Windows Explorer, and navigate to your Downloads folder
-3. Double-click "vasl_setup.bat"
-4. The script will finish in about a minute, depending on your Internet connection speed
+
+### Update the script
+**If you want to use the default ASL directory location and VASL version, skip this step and move on to "Run the script"**
+
+**Currently, the Enhanced Scenarios have been saved with VASL 6.2.2, so if you use a later version of VASL,
+you'll get a warning message about needing to convert the scenarios to the newer version**
+
+1. Run WordPad (Hit Windows-R, then type in "WordPad" in the "Open:" text field, and press Enter)
+2. In the "Document - WordPad" window, choose the "File > Open..." menu option
+3. Navigate to your Downloads folder
+4. In the lower right corner of the "Open" dialog, click the "All Wordpad Documents (*.rtf,)" option, and choose "All Documents (*.*)"
+5. Click on the "vasl_setup.bat" file
+6. Click the "Open" button
+7. If you like, update the value for ASLROOT to wherever you want to setup the ASL files
+8. If you like, update the value for VASLVERSION to the 3 digit version (important, don't use periods in the version number) of VASL you want to download (e.g. "630")
+9. In the "vasl_setup.bat - WordPad" window, choose the "File > Save" menu option
+10. Close WordPad
+
+### Run the script
+
+The script defaults are:
+
+* ASLROOT=C:\ASL
+* VASLVERSION=622
+
+**WARNING: This script deletes the following directories in the ASL structure**
+
+* %ASLROOT%\Scenarios\scenarios-master
+* %ASLROOT%\VASL\vasl-boards-extensions-master
+
+**WARNING: This script recreates the following directories in the ASL structure**
+
+* %ASLROOT%\Scenarios\MMP\StarterKit\Enhanced
+* %ASLROOT%\VASL\boards
+* %ASLROOT%\VASL\extensions
+* %ASLROOT%\VASL\extensions-6.0
+* %ASLROOT%\VASL\extensions-complete
+* %ASLROOT%\VASL\extensions-ssmythe
+
+**WARNING: If you care about any of these directories, back them up before running the script**
+
+1. Open Windows Explorer, and navigate to your Downloads folder
+2. Double-click "vasl_setup.bat"
+3. The script will finish in about a minute, depending on your Internet connection speed
 
 ### Setup VASL module and preferences
 1. Launch VASSAL
