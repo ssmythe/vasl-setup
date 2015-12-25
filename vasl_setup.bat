@@ -163,7 +163,8 @@ if exist %ASLROOT%\VASL\extensions rmdir /S /Q %ASLROOT%\VASL\extensions 2>&1 1>
 if exist %ASLROOT%\VASL\extensions-6.0 rmdir /S /Q %ASLROOT%\VASL\extensions-6.0 2>&1 1> nul
 if exist %ASLROOT%\VASL\extensions-complete rmdir /S /Q %ASLROOT%\VASL\extensions-complete 2>&1 1> nul
 echo Downloading VASL boards and extensions zip from GitHit and expanding it
-echo Warning: this is a 273 MB download.  It's big!  Takes about a minute on a 60 Mbps connection...
+echo Warning: this is a 273 MB download.  It's big!
+echo The download takes about a minute on a 60 Mbps connection...
 PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%SCRIPTNAME%.ps1'" 2>&1 1> nul
 echo Relocating Enhanced directory to %ASLROOT%\Scenarios\MMP\StarterKit\Enhanced
 move /Y %ASLROOT%\VASL\vasl-boards-extensions-master\boards %ASLROOT%\VASL\boards > nul
