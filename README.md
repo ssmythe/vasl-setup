@@ -17,7 +17,7 @@ These instructions were verified on VASSAL 3.2.15 and VASL 6.2.2
 4. Click the "vasl-X.Y.Z.vmod" where X.Y.Z is the version (e.g. "vasl-6.2.2.vmod")
 5. Click the "Open" button
 6. A "Processing Image Tiles" window will pop up and show some processing.  It will close that window and launch VASL "Welcome" dialog when it's done
-  * **(NOTE: The Welcome dialog may be behind other applications, like your web browser, so you may need to minimize applications until you see it.)** 
+  * NOTE: The Welcome dialog may be behind other applications, like your web browser, so you may need to minimize applications until you see it. 
 7. Click the "Cancel" button
 8. In the "VASL controls" window, chose the "File > Preferences..." menu option
 9. In the "Preferences" window, in the "General" tab, click the "Select" button next to "Board Directory"
