@@ -49,7 +49,9 @@ The script defaults are:
 
 1. Open Windows Explorer, and navigate to your Downloads folder
 2. Double-click "vasl_setup.bat"
-3. The script will finish in about a minute, depending on your Internet connection speed
+3. If you get a warning saying "Windows protected your PC" regarding an "unrecognized app", click "More info",
+and then click the "Run anyway" button
+4. The script will finish in about a minute, depending on your Internet connection speed
 
 ### Setup VASL module and preferences
 1. Launch VASSAL
