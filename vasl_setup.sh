@@ -11,6 +11,10 @@
 # ...all in about a minute!
 # ==========================================================================
 
+ASLROOT=${HOME}/ASL
+VASLVERSION=622
+
+
 function cleanup_file()
 {
     filename="$1"
@@ -61,9 +65,8 @@ function download_and_unzip()
 }
 
 
-ASLROOT=${HOME}/ASL
-VASLVERSION=622
 SCRIPTNAME=$(dirname $0)/$(basename $0)
+
 
 echo ----------------
 echo VASL Directories
@@ -151,10 +154,10 @@ echo --------------------------
 cleanup_directory "${ASLROOT}/VASL/vasl-boards-extensions-master"
 cleanup_directory "${ASLROOT}/VASL/boards"
 cleanup_directory "${ASLROOT}/VASL/extensions"
-cleanup_directory "${ASLROOT}/VASL/extensions-empty"
-ensure_directory "${ASLROOT}/VASL/extensions-empty"
 cleanup_directory "${ASLROOT}/VASL/extensions-6.0"
 cleanup_directory "${ASLROOT}/VASL/extensions-complete"
+cleanup_directory "${ASLROOT}/VASL/extensions-empty"
+ensure_directory "${ASLROOT}/VASL/extensions-empty"
 echo Downloading VASL boards and extensions zip from GitHit and expanding it
 echo Warning: this is a 273 MB download.  It\'s big!
 echo The download takes about a minute on a 60 Mbps connection...
