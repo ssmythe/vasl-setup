@@ -1,6 +1,9 @@
 # vasl-setup
 Scripts to create Patrick Ireland's standard VASL directory structures, and download VASL vmod, enhanced scenarios, boards, and extensions
 
+* Jump to [On Windows](#on-windows)
+* Jump to [On Mac OS X](#on-mac-os-x)
+
 ## On Windows
 These instructions were verified on VASSAL 3.2.15 and VASL 6.2.2
 
