@@ -160,11 +160,10 @@ if exist %ASLROOT%\VASL\master.zip del /F %ASLROOT%\VASL\master.zip 2>&1 1> nul
 if exist %ASLROOT%\VASL\vasl-boards-extensions-master rmdir /S /Q %ASLROOT%\VASL\vasl-boards-extensions-master 2>&1 1> nul
 if exist %ASLROOT%\VASL\boards rmdir /S /Q %ASLROOT%\VASL\boards 2>&1 1> nul
 if exist %ASLROOT%\VASL\extensions rmdir /S /Q %ASLROOT%\VASL\extensions 2>&1 1> nul
-if exist %ASLROOT%\VASL\extensions-empty rmdir /S /Q %ASLROOT%\VASL\extensions-empty 2>&1 1> nul
-if not exist %ASLROOT%\VASL\extensions-empty mkdir %ASLROOT%\VASL\extensions-empty 2>&1 1> nul
 if exist %ASLROOT%\VASL\extensions-6.0 rmdir /S /Q %ASLROOT%\VASL\extensions-6.0 2>&1 1> nul
 if exist %ASLROOT%\VASL\extensions-complete rmdir /S /Q %ASLROOT%\VASL\extensions-complete 2>&1 1> nul
-if exist %ASLROOT%\VASL\extensions-ssmythe rmdir /S /Q %ASLROOT%\VASL\extensions-ssmythe 2>&1 1> nul
+if exist %ASLROOT%\VASL\extensions-empty rmdir /S /Q %ASLROOT%\VASL\extensions-empty 2>&1 1> nul
+if not exist %ASLROOT%\VASL\extensions-empty mkdir %ASLROOT%\VASL\extensions-empty 2>&1 1> nul
 echo Downloading VASL boards and extensions zip from GitHit and expanding it
 echo Warning: this is a 273 MB download.  It's big!
 echo The download takes about a minute on a 60 Mbps connection...
