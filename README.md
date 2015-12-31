@@ -86,7 +86,7 @@ These instructions were verified on VASSAL 3.2.15 and VASL 6.2.2
 
 ### Download the script
 1. Launch your browser (i.e. Safari, Firefox, Chrome)
-2. Right-click on the link [vasl_setup.bat](https://raw.githubusercontent.com/ssmythe/vasl-setup/master/vasl_setup.sh), and chose "Save as..." (or "Download Linked File As...") the file to your Downloads folder
+2. Right-click on the link [vasl_setup.sh](https://raw.githubusercontent.com/ssmythe/vasl-setup/master/vasl_setup.sh), and chose "Save as..." (or "Download Linked File As...") the file to your Downloads folder
 3. Close your browser
 
 ### Update the script
