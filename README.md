@@ -129,7 +129,7 @@ The script defaults are:
 
 **WARNING: If you care about any of these directories, back them up before running the script**
 
-1. Run Terminal (Launchpad > Other > TextEdit)
+1. Run Terminal (Launchpad > Other > Terminal)
 2. In the Terminal window, enter "cd Downloads" (or change Downloads to the path where you saved the file)
 3. In the Terminal window, enter "bash vasl_setup.sh"
 4. The script will finish in about a minute, depending on your Internet connection speed
