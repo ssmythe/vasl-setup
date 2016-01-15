@@ -1,6 +1,8 @@
 # vasl-setup
 Scripts to create Patrick Ireland's standard VASL directory structures, and download VASL vmod, enhanced scenarios, boards, and extensions
 
+**These instructions assume you have already installed Java and the VASSAL engine**
+
 * Jump to [On Windows](#on-windows)
 * Jump to [On Mac OS X](#on-mac-os-x)
 * Jump to [On Linux](#on-linux)
@@ -221,22 +223,22 @@ The script defaults are:
 2. Choose the "File > Open Module..." menu option
 3. Navigate to your home directory, then to "ASL/VASL"
 4. Click the "vasl-X.Y.Z.vmod" where X.Y.Z is the version (e.g. "vasl-6.2.2.vmod")
-5. Click the "Open" button
+5. Click the "OK" button
 6. A "Processing Image Tiles" window will pop up and show some processing.  It will close that window and launch VASL "Welcome" dialog when it's done
   * NOTE: The Welcome dialog may be behind other applications, like your web browser, so you may need to minimize applications until you see it. 
 7. Click the "Cancel" button
 8. In the "VASL controls" window, chose the "File > Preferences..." menu option
 9. In the "Preferences" window, in the "General" tab, click the "Select" button next to "Board Directory"
 10. Navigate to your home directory, then to "ASL/VASL/boards"
-11. Click the "Open" button
+11. Click the "OK" button
 12. In the "Preferences" window, in the "Extensions" tab, click the "Select" button next to "Extensions Directory"
-13. Navigate to your home directory, then to "ASL/VASL/extensions-ssmythe"
-14. Click the "Open" button
+13. Navigate to your home directory, then to "ASL/VASL/extensions-ssmythe" (you may have to scroll down to get to it)
+14. Click the "OK" button
 15. In the "Preferences" window, Click the "OK" button
 
 ### Test VASL setup by loading an Enhanced Scenario
 1. In the "VASL controls" window, chose the "File > Load Game..." menu option
 2. Navigate to home directory, then to "ASL/Scenarios/MMP/StarterKit/Enhanced"
 3. Click on the "S 001 Retaking Vierville - Enhanced.vsav" scenario file
-4. Click the "Open" button
+4. Click the "OK" button
 5. The scenario should load just fine with no error messages in the "VASL controls" window
