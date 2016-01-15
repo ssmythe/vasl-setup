@@ -83,6 +83,9 @@ cleanup_directory "${HOME}/Downloads/VASSAL-${VASSAL_VERSION}"
 download_and_unzip "http://downloads.sourceforge.net/vassalengine/VASSAL-${VASSAL_VERSION}-linux.tar.bz2" "${HOME}/Downloads/VASSAL-${VASSAL_VERSION}-linux.tar.bz2" "${HOME}/Downloads"
 mv "${HOME}/Downloads/VASSAL-${VASSAL_VERSION}" "${VASSAL_ROOT}"
 
+echo Downloading the VASSAL application shortcut icon
+download_file "https://raw.githubusercontent.com/ssmythe/vasl-setup/master/VASSAL.png" "${VASSAL_ROOT}/lib/VASSAL.png"
+
 echo Creating VASSAL application shortcut
 cat - >${HOME}/.local/share/applications/vassal.desktop <<EOF
 [Desktop Entry]

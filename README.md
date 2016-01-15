@@ -176,15 +176,15 @@ These instructions were verified on VASSAL 3.2.15 and VASL 6.2.2
 **Currently, the Enhanced Scenarios have been saved with VASL 6.2.2, so if you use a later version of VASL,
 you'll get a warning message about needing to convert the scenarios to the newer version**
 
-1. Run TextEdit (Launchpad > Other > TextEdit)
-2. Choose the "File > Open..." menu option
+1. Run gedit (Activities > Show Applications > gedit)
+2. Click the "Open..." button
 3. Navigate to your Downloads folder
 4. Click on the "vasl_setup.sh" file
 5. Click the "Open" button
 6. If you like, update the value for ASLROOT to wherever you want to setup the ASL files
 7. If you like, update the value for VASLVERSION to the 3 digit version (important, don't use periods in the version number) of VASL you want to download (e.g. "630")
-8. Choose the "File > Save" menu option
-9. Close TextEdit
+8. Click "Save" button
+9. Close gedit
 
 ### Run the script
 
@@ -210,14 +210,14 @@ The script defaults are:
 
 **WARNING: If you care about any of these directories, back them up before running the script**
 
-1. Run Terminal (Launchpad > Other > Terminal)
+1. Run Terminal (Activities > Show Applications > Utilities > Terminal)
 2. In the Terminal window, enter "cd Downloads" (or change Downloads to the path where you saved the file)
 3. In the Terminal window, enter "bash vasl_setup.sh"
 4. The script will finish in about a minute, depending on your Internet connection speed
 5. Close Terminal
 
 ### Setup VASL module and preferences
-1. Launch VASSAL (Launchpad > VASSAL)
+1. Launch VASSAL (Activities > Show Applications > VASSAL)
 2. Choose the "File > Open Module..." menu option
 3. Navigate to your home directory, then to "ASL/VASL"
 4. Click the "vasl-X.Y.Z.vmod" where X.Y.Z is the version (e.g. "vasl-6.2.2.vmod")
