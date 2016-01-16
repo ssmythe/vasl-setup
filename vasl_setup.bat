@@ -183,23 +183,23 @@ echo.
 echo.
 
 
-echo -----------------------
-echo VASL extensions-ssmythe
-echo -----------------------
-if exist %ASLROOT%\VASL\extensions-ssmythe rmdir /S /Q %ASLROOT%\VASL\extensions-ssmythe 2>&1 1> nul
-if not exist %ASLROOT%\VASL\extensions-ssmythe mkdir %ASLROOT%\VASL\extensions-ssmythe 2>&1 1> nul
+echo ----------------------
+echo VASL extensions-common
+echo ----------------------
+if exist %ASLROOT%\VASL\extensions-common rmdir /S /Q %ASLROOT%\VASL\extensions-common 2>&1 1> nul
+if not exist %ASLROOT%\VASL\extensions-common mkdir %ASLROOT%\VASL\extensions-common 2>&1 1> nul
 
 rem extensions-6.0
-copy /y %ASLROOT%\VASL\extensions-6.0\*.vmdx %ASLROOT%\VASL\extensions-ssmythe 2>&1 1> nul
+copy /y %ASLROOT%\VASL\extensions-6.0\*.vmdx %ASLROOT%\VASL\extensions-common 2>&1 1> nul
 
 rem remove obsolete extensions
-if exist %ASLROOT%\VASL\extensions-ssmythe\chatter-plus-2.21.vmdx del /F %ASLROOT%\VASL\extensions-ssmythe\chatter-plus-2.21.vmdx 2>&1 1> nul
+if exist %ASLROOT%\VASL\extensions-common\chatter-plus-2.21.vmdx del /F %ASLROOT%\VASL\extensions-common\chatter-plus-2.21.vmdx 2>&1 1> nul
 
 rem extensions-complete
-copy /y %ASLROOT%\VASL\extensions-complete\3d6.mdx %ASLROOT%\VASL\extensions-ssmythe 2>&1 1> nul
-copy /y %ASLROOT%\VASL\extensions-complete\5VBM.mdx %ASLROOT%\VASL\extensions-ssmythe 2>&1 1> nul
-copy /y %ASLROOT%\VASL\extensions-complete\P-dice.mdx %ASLROOT%\VASL\extensions-ssmythe 2>&1 1> nul
-copy /y %ASLROOT%\VASL\extensions-complete\Rare_Vehicles?Ordnance.mdx %ASLROOT%\VASL\extensions-ssmythe 2>&1 1> nul
+copy /y %ASLROOT%\VASL\extensions-complete\3d6.mdx %ASLROOT%\VASL\extensions-common 2>&1 1> nul
+copy /y %ASLROOT%\VASL\extensions-complete\5VBM.mdx %ASLROOT%\VASL\extensions-common 2>&1 1> nul
+copy /y %ASLROOT%\VASL\extensions-complete\P-dice.mdx %ASLROOT%\VASL\extensions-common 2>&1 1> nul
+copy /y %ASLROOT%\VASL\extensions-complete\Rare_Vehicles?Ordnance.mdx %ASLROOT%\VASL\extensions-common 2>&1 1> nul
 
-dir /b %ASLROOT%\VASL\extensions-ssmythe
+dir /b %ASLROOT%\VASL\extensions-common
 :EOF
