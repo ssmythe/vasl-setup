@@ -11,7 +11,7 @@
 # ...all in about a minute!
 # ==========================================================================
 
-ASLROOT=${HOME}/ASL
+ASLROOT="${HOME}/ASL"
 VASLVERSION=622
 
 
@@ -65,7 +65,7 @@ function download_and_unzip()
 }
 
 
-SCRIPTNAME=$(dirname $0)/$(basename $0)
+SCRIPTNAME="$(dirname $0)/$(basename $0)"
 
 
 echo ----------------
@@ -174,22 +174,22 @@ echo ""
 echo ""
 
 
-echo -----------------------
-echo VASL extensions-ssmythe
-echo -----------------------
-cleanup_directory "${ASLROOT}/VASL/extensions-ssmythe"
-ensure_directory "${ASLROOT}/VASL/extensions-ssmythe"
+echo ----------------------
+echo VASL extensions-common
+echo ----------------------
+cleanup_directory "${ASLROOT}/VASL/extensions-common"
+ensure_directory "${ASLROOT}/VASL/extensions-common"
 
 # extensions-6.0
-cp -f "${ASLROOT}"/VASL/extensions-6.0/*.vmdx "${ASLROOT}/VASL/extensions-ssmythe"
+cp -f "${ASLROOT}"/VASL/extensions-6.0/*.vmdx "${ASLROOT}/VASL/extensions-common"
 
 # remove obsolete extensions
-cleanup_file "${ASLROOT}/VASL/extensions-ssmythe/chatter-plus-2.21.vmdx"
+cleanup_file "${ASLROOT}/VASL/extensions-common/chatter-plus-2.21.vmdx"
 
 # extensions-complete
-cp -f "${ASLROOT}/VASL/extensions-complete/3d6.mdx" "${ASLROOT}/VASL/extensions-ssmythe"
-cp -f "${ASLROOT}/VASL/extensions-complete/5VBM.mdx" "${ASLROOT}/VASL/extensions-ssmythe"
-cp -f "${ASLROOT}/VASL/extensions-complete/P-dice.mdx" "${ASLROOT}/VASL/extensions-ssmythe"
-cp -f "${ASLROOT}/VASL/extensions-complete/Rare_Vehicles&Ordnance.mdx" "${ASLROOT}/VASL/extensions-ssmythe"
+cp -f "${ASLROOT}/VASL/extensions-complete/3d6.mdx" "${ASLROOT}/VASL/extensions-common"
+cp -f "${ASLROOT}/VASL/extensions-complete/5VBM.mdx" "${ASLROOT}/VASL/extensions-common"
+cp -f "${ASLROOT}/VASL/extensions-complete/P-dice.mdx" "${ASLROOT}/VASL/extensions-common"
+cp -f "${ASLROOT}/VASL/extensions-complete/Rare_Vehicles&Ordnance.mdx" "${ASLROOT}/VASL/extensions-common"
 
-ls -1 ${ASLROOT}/VASL/extensions-ssmythe
+ls -1 "${ASLROOT}/VASL/extensions-common"

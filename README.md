@@ -48,8 +48,9 @@ The script defaults are:
 * %ASLROOT%\VASL\boards
 * %ASLROOT%\VASL\extensions
 * %ASLROOT%\VASL\extensions-6.0
+* %ASLROOT%\VASL\extensions-common
 * %ASLROOT%\VASL\extensions-complete
-* %ASLROOT%\VASL\extensions-ssmythe
+* %ASLROOT%\VASL\extensions-empty
 
 **WARNING: If you care about any of these directories, back them up before running the script**
 
@@ -73,7 +74,7 @@ and then click the "Run anyway" button
 10. Navigate to "C:\ASL\VASL\boards"
 11. Click the "Open" button
 12. In the "Preferences" window, in the "Extensions" tab, click the "Select" button next to "Extensions Directory"
-13. Navigate to "C:\ASL\VASL\extensions-ssmythe"
+13. Navigate to "C:\ASL\VASL\extensions-common"
 14. Click the "Open" button
 15. In the "Preferences" window, Click the "OK" button
 
@@ -126,9 +127,9 @@ The script defaults are:
 * ${ASLROOT}/VASL/boards
 * ${ASLROOT}/VASL/extensions
 * ${ASLROOT}/VASL/extensions-6.0
+* ${ASLROOT}/VASL/extensions-common
 * ${ASLROOT}/VASL/extensions-complete
 * ${ASLROOT}/VASL/extensions-empty
-* ${ASLROOT}/VASL/extensions-ssmythe
 
 **WARNING: If you care about any of these directories, back them up before running the script**
 
@@ -152,7 +153,7 @@ The script defaults are:
 10. Navigate to your home directory, then to "ASL/VASL/boards"
 11. Click the "Open" button
 12. In the "Preferences" window, in the "Extensions" tab, click the "Select" button next to "Extensions Directory"
-13. Navigate to your home directory, then to "ASL/VASL/extensions-ssmythe"
+13. Navigate to your home directory, then to "ASL/VASL/extensions-common"
 14. Click the "Open" button
 15. In the "Preferences" window, Click the "OK" button
 
@@ -206,9 +207,9 @@ The script defaults are:
 * ${ASLROOT}/VASL/boards
 * ${ASLROOT}/VASL/extensions
 * ${ASLROOT}/VASL/extensions-6.0
+* ${ASLROOT}/VASL/extensions-common
 * ${ASLROOT}/VASL/extensions-complete
 * ${ASLROOT}/VASL/extensions-empty
-* ${ASLROOT}/VASL/extensions-ssmythe
 
 **WARNING: If you care about any of these directories, back them up before running the script**
 
@@ -232,7 +233,7 @@ The script defaults are:
 10. Navigate to your home directory, then to "ASL/VASL/boards"
 11. Click the "OK" button
 12. In the "Preferences" window, in the "Extensions" tab, click the "Select" button next to "Extensions Directory"
-13. Navigate to your home directory, then to "ASL/VASL/extensions-ssmythe" (you may have to scroll down to get to it)
+13. Navigate to your home directory, then to "ASL/VASL/extensions-common" (you may have to scroll down to get to it)
 14. Click the "OK" button
 15. In the "Preferences" window, Click the "OK" button
 

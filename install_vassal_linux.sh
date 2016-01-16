@@ -12,7 +12,7 @@
 # ==========================================================================
 
 VASSAL_VERSION=3.2.15
-VASSAL_ROOT=${HOME}/VASSAL-${VASSAL_VERSION}
+VASSAL_ROOT="${HOME}/VASSAL-${VASSAL_VERSION}"
 
 function cleanup_file()
 {
@@ -67,7 +67,7 @@ function download_and_unzip()
 }
 
 
-SCRIPTNAME=$(dirname $0)/$(basename $0)
+SCRIPTNAME="$(dirname $0)/$(basename $0)"
 
 
 echo -------------
@@ -87,7 +87,7 @@ echo Downloading the VASSAL application shortcut icon
 download_file "https://raw.githubusercontent.com/ssmythe/vasl-setup/master/VASSAL.png" "${VASSAL_ROOT}/lib/VASSAL.png"
 
 echo Creating VASSAL application shortcut
-cat - >${HOME}/.local/share/applications/vassal.desktop <<EOF
+cat - >"${HOME}/.local/share/applications/vassal.desktop" <<EOF
 [Desktop Entry]
 Type=Application
 Encoding=UTF-8
